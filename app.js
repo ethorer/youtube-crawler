@@ -25,8 +25,6 @@ crawlChannels(crawlIter);
 
 function crawlChannels(crawlIter) {
 
-    console.log(crawlDepth);
-
     // 'mark' is for checking if we are done with the current batch of channels;
     // 'crawlIter' is the index of the channelArr array
     if (crawlDepth > 0 && crawlIter >= mark){
