@@ -77,8 +77,7 @@ function putChannelSubscriptionsInArray(channel, res, resultArr) {
         getChannelSubscriptions(channel, res.data.nextPageToken, resultArr);
     else{
          for (var i = 0; i < resultArr.length; i++) {
-            if //((search.binarySearch(resultArr[i], channelArr) > -1)
-                  ((search.binarySearch(channelSorted, resultArr[i]) > -1)){
+            if ((search.binarySearch(channelSorted, resultArr[i]) > -1)){
                     console.log('duplicate channel (subscription) ' + resultArr[i] + ' from ' + channel);
                     continue;
                 }
