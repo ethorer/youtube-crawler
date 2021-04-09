@@ -1,7 +1,7 @@
 # youtube-crawler
 This outputs a text file of YouTube video IDs.
 
-The initial channel ID in _channelArr_ is the starting point.  It then crawls each channel in the original channel's playlists and subscriptions and repeats the process _crawlDepth_ - 1 times.  Each channel is checked against a list of already-crawled channels so none are crawled twice.  It then gets all the uploads from the collected channels.
+The initial channel ID in _channelArr_ is the starting point.  It then crawls each channel in the original channel's playlists and subscriptions and repeats the process until _crawlDepth_ is 0.  Each channel is checked against a list of already-crawled channels so none are crawled twice.  It then gets all the uploads from the collected channels.
 
 Run with Node: <code>node app.js</code>
 
